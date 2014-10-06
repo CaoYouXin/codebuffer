@@ -1,69 +1,90 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Codebuffer by CaoYouXin</title>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<title>Codebuffer by CaoYouXin</title>
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Codebuffer</h1>
-        <p>只放代码，工程文件都Ignore掉吧</p>
+<link rel="stylesheet" href="stylesheets/styles.css">
+<link rel="stylesheet" href="stylesheets/pygment_trac.css">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, user-scalable=no">
+<script src="javascripts/jquery-2.1.0.js"></script>
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<h1>Codebuffer</h1>
+			<p>只放代码，工程文件都Ignore掉吧</p>
 
-        <p class="view"><a href="https://github.com/CaoYouXin/codebuffer">查看源代码 <small>CaoYouXin/codebuffer</small></a></p>
+			<p class="view">
+				<a href="https://github.com/CaoYouXin/codebuffer">查看源代码 <small>CaoYouXin/codebuffer</small></a>
+			</p>
 
+			<ul id="navigator">
+				<li><a
+					href="https://github.com/CaoYouXin/codebuffer/zipball/master">Download
+						<strong>ZIP压缩包</strong>
+				</a></li>
+				<li><a
+					href="https://github.com/CaoYouXin/codebuffer/tarball/master">Download
+						<strong>TAR压缩包</strong>
+				</a></li>
+				<li><a href="docs/index.html">Go To <strong>文档</strong>
+				</a></li>
+				<li><a href="https://github.com/CaoYouXin/codebuffer">View
+						On <strong>GitHub</strong>
+				</a></li>
+				<li><a href="https://github.com/CaoYouXin/codebuffer/issues">View
+						On <strong>Issues</strong>
+				</a></li>
+				<li><a href="https://github.com/CaoYouXin/codebuffer/wiki">View
+						On <strong>Wiki</strong>
+				</a></li>
+			</ul>
+		</header>
+		<section>
+			<h3>
+				<a name="codebuffer" class="anchor" href="#codebuffer"><span
+					class="octicon octicon-link"></span></a>codebuffer
+			</h3>
+			<p>只放代码，工程文件都Ignore掉吧</p>
 
-        <ul>
-          <li><a href="https://github.com/CaoYouXin/codebuffer/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/CaoYouXin/codebuffer/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/CaoYouXin/codebuffer">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h3>
-<a name="codebuffer" class="anchor" href="#codebuffer"><span class="octicon octicon-link"></span></a>codebuffer</h3>
+			<h2>Q:搞算法为什么要写代码，而不去做推理？</h2>
+			<h2>A:代码运行的结果可以让那些不相信我们推理的人木有话说！</h2>
+			<p>（这跟现在的科学家为什么要做实验的道理是一样的）</p>
 
-<p>只放代码，工程文件都Ignore掉吧</p>
+			<h3>合作事宜：</h3>
 
-<h2>
-<a name="q%E6%90%9E%E7%AE%97%E6%B3%95%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%86%99%E4%BB%A3%E7%A0%81%E8%80%8C%E4%B8%8D%E5%8E%BB%E5%81%9A%E6%8E%A8%E7%90%86" class="anchor" href="#q%E6%90%9E%E7%AE%97%E6%B3%95%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%86%99%E4%BB%A3%E7%A0%81%E8%80%8C%E4%B8%8D%E5%8E%BB%E5%81%9A%E6%8E%A8%E7%90%86"><span class="octicon octicon-link"></span></a>Q:搞算法为什么要写代码，而不去做推理？</h2>
+			<ol>
+				<li>这里只放代码。现在只有个c的文件夹，也就是说，c代码都放进那里。</li>
+				<li>c或c++里面提交的东东都不要带main函数。注释掉就好了。</li>
+				<li>下面详细说明clone过程中注意的几点：
+					<ul>
+						<li>以general project创建项目;</li>
+						<li>右键项目名-&gt;New-&gt;转化成c/c++项目;</li>
+						<li>完成了第二步，会看到干干净净的文件目录，但是没有source folder;</li>
+						<li>右键项目名-&gt;New-&gt;Source Folder-&gt;选择想要的目录。<br> PS:
+							直接选c文件夹应该也可以吧，只要保证不上传跟开发工具相关的文件就好了，因为担心不同开发工具使用相同的文件名。
+						</li>
+					</ul>
+				</li>
+			</ol>
+		</section>
+		<footer>
+			<p>
+				这个项目由 <a href="https://github.com/CaoYouXin">CaoYouXin</a> 维护
+			</p>
+			<p>
+				<small>Hosted on GitHub Pages &mdash; Theme by <a
+					href="https://github.com/orderedlist">orderedlist</a></small>
+			</p>
+		</footer>
+	</div>
+	<script src="javascripts/scale.fix.js"></script>
 
-<h2>
-<a name="a%E4%BB%A3%E7%A0%81%E8%BF%90%E8%A1%8C%E7%9A%84%E7%BB%93%E6%9E%9C%E5%8F%AF%E4%BB%A5%E8%AE%A9%E9%82%A3%E4%BA%9B%E4%B8%8D%E7%9B%B8%E4%BF%A1%E6%88%91%E4%BB%AC%E6%8E%A8%E7%90%86%E7%9A%84%E4%BA%BA%E6%9C%A8%E6%9C%89%E8%AF%9D%E8%AF%B4" class="anchor" href="#a%E4%BB%A3%E7%A0%81%E8%BF%90%E8%A1%8C%E7%9A%84%E7%BB%93%E6%9E%9C%E5%8F%AF%E4%BB%A5%E8%AE%A9%E9%82%A3%E4%BA%9B%E4%B8%8D%E7%9B%B8%E4%BF%A1%E6%88%91%E4%BB%AC%E6%8E%A8%E7%90%86%E7%9A%84%E4%BA%BA%E6%9C%A8%E6%9C%89%E8%AF%9D%E8%AF%B4"><span class="octicon octicon-link"></span></a>A:代码运行的结果可以让那些不相信我们推理的人木有话说！</h2>
-
-<p>（这跟现在的科学家为什么要做实验的道理是一样的）</p>
-
-<h3>
-<a name="%E5%90%88%E4%BD%9C%E4%BA%8B%E5%AE%9C" class="anchor" href="#%E5%90%88%E4%BD%9C%E4%BA%8B%E5%AE%9C"><span class="octicon octicon-link"></span></a>合作事宜：</h3>
-
-<ol>
-<li>这里只放代码。现在只有个c的文件夹，也就是说，c代码都放进那里。</li>
-<li>c或c++里面提交的东东都不要带main函数。注释掉就好了。</li>
-<li>下面详细说明clone过程中注意的几点：
-	<ul>
-	<li>以general project创建项目;</li>
-	<li>右键项目名-&gt;New-&gt;转化成c/c++项目;</li>
-	<li>完成了第二步，会看到干干净净的文件目录，但是没有source folder;</li>
-	<li>右键项目名-&gt;New-&gt;Source Folder-&gt;选择想要的目录。<br>
-	PS: 直接选c文件夹应该也可以吧，只要保证不上传跟开发工具相关的文件就好了，因为担心不同开发工具使用相同的文件名。</li>
-	</ul>
-</li>
-</ol>
-      </section>
-      <footer>
-        <p>这个项目由 <a href="https://github.com/CaoYouXin">CaoYouXin</a> 维护</p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
-  </body>
+</body>
 </html>
