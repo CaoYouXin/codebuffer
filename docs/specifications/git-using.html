@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<title>git使用规范 by CaoYouXin</title>
+
+<link rel="stylesheet" href="../../stylesheets/styles.css">
+<link rel="stylesheet" href="../../stylesheets/pygment_trac.css">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, user-scalable=no">
+<script src="../../javascripts/jquery-2.1.0.js"></script>
+<!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<h1>Codebuffer</h1>
+			<p>只放代码，工程文件都Ignore掉吧</p>
+
+			<p class="view">
+				<a href="https://github.com/CaoYouXin/codebuffer">查看源代码 <small>CaoYouXin/codebuffer</small></a>
+			</p>
+
+
+			<ul id="navigator">
+				<li><a href="../index.html">Back To <strong>文档</strong>
+				</a></li>
+				<li><a href="https://github.com/CaoYouXin/codebuffer/issues">View
+						On <strong>Issues</strong>
+				</a></li>
+				<li><a href="https://github.com/CaoYouXin/codebuffer/wiki">View
+						On <strong>Wiki</strong>
+				</a></li>
+			</ul>
+		</header>
+		<section>
+			<h2>规则是人定的，我也在摸索……</h2>
+		
+			<p>就在我写每人一个分支的合作模式，写到一半的时候；我觉得按模块分更好哦！</p>
+			
+			<p>首先说明几个必要的分支的用途：</p>
+			
+			<ul>
+				<li>master：整个源代码。其实，它是一类分支的代表，即源代码打包成形的分支；利用该类分支可以编译出一个可用软件</li>
+				<li>util：主要放stringutil啦，timeutil啦。就是把大家认为在很多地方都会用到的公共代码放到这里。这个过程是个实践的过程。这类分支的特点是按模块划分，只不过util是个所有其它分支都会用到的</li>
+			</ul>
+			
+			<p>PS：没错，就是增量的概念。但是由于merge是要认为从分支A加到分支B的手动过程，分支B的内容不会自动和分支A的内容同步。所以，请严格按照模块和源代码打包的思想去建立分支。</p>
+			
+			<p>接下来说一下，我们将来开发的日常：</p>
+			
+			<ul>
+				<li>打开Eclipse，Fetch你正在开发的分支，以及你所直接merge过的分支。这里举个例子，假如我开发一个模块C，我跟和其他开发模块C的童鞋，先Fetch我的分支C；接下来，假如模块C中代码调用了模块D和模块E中的代码，那么我再Fetch分支D和分支E的代码，然后merge到我的分支C中来</li>
+				<li>Switch To你自己的branch，这个其实不要理会的，你开发哪个模块就切换到哪个分支就好了。记得遵守日常1先！</li>
+				<li>开始你的开发吧。。。Commit的时候分清楚自己在哪个分支，看仔细了，否则还得删删改改。
+			</ul>
+			
+			<p>PS：我们常看到我们自己的模块调用的那个模块中的代码不够好，怎么办？不要在你的分支中改它，在<a href="https://github.com/CaoYouXin/codebuffer/issues">Issues</a>里@相应的人；如果实在手痒，改就改了，反正第二天还要merge回去，所以。。。So，原则就是，不要把大的分支merge到小的分支中去！</p>
+		
+			<p>最后来说一下，第一次clone时的几点：</p>
+			
+			<ul>
+				<li>选择要clone的分支时，只选择你要开发的模块的分支和其直接依赖的模块的分支就好。这个东西的说明，也在<a href="../index.html">文档</a>里面找</li>
+				<li>如果要学习整个源代码，勾上master没错</li>
+				<li>把源代码从服务器拉到本地后，要是建立在此基础上开发新模块，就new一个分支，source选择你依赖的一个模块的分支，其它依赖的模块再一个个merge进来</li>
+			</ul>
+			
+			<p>这里扣一张网上的图，原图地址是http://hi.csdn.net/attachment/201112/7/0_1323240726WxTa.gif</p>
+			<img alt="Git 版本控制 branch model 分支模型基本介绍" src="http://hi.csdn.net/attachment/201112/7/0_1323240726WxTa.gif">
+			<a href="../../images/branch model.jpeg">如果图片不显示，点这里</a>
+		</section>
+		<footer>
+			<p>
+				这个项目由 <a href="https://github.com/CaoYouXin">CaoYouXin</a> 维护
+			</p>
+			<p>
+				<small>Hosted on GitHub Pages &mdash; Theme by <a
+					href="https://github.com/orderedlist">orderedlist</a></small>
+			</p>
+		</footer>
+	</div>
+	<script src="../../javascripts/scale.fix.js"></script>
+
+</body>
+</html>
