@@ -76,7 +76,7 @@ int diff(SLinkList space, ElemType *source, int a, int b) {
 }
 
 //int main(void) {
-//	puts("!!!Hello World!!!"); /* prints !!!Hello World!!! */
+//	printf("!!!Hello World!!!"); /* prints !!!Hello World!!! */
 //
 //	SLinkList space;
 //	int source[10] = { 1, 2, 3, 4, 5, 1, 5, 6, 4, 7};
@@ -85,6 +85,6 @@ int diff(SLinkList space, ElemType *source, int a, int b) {
 //		printf("%d ", space[iter].data);
 //	}
 //
-//	puts("\n!!!That's all!!!");
+//	printf("\n!!!That's all!!!");
 //	return EXIT_SUCCESS;
 //}
