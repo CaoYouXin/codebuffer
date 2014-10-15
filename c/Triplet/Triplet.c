@@ -1,7 +1,6 @@
 /*
  * Triplet.c
  *
- *  Created on: 2014年9月26日
  *      Author: caolisheng
  */
 
