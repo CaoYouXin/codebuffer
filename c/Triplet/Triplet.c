@@ -33,19 +33,19 @@ Status DestroyTriplet(pTriplet *T) {
 	return OK;
 }
 
-//int main() {
-//	puts("Let's start...");
-//	pTriplet T = NULL;
-//	Status s = InitTriplet(&T, 1, 2, 3);
-//	if (s) {
-//		printf(" %d %d %d \n", (*T).e1, (*T).e2, (*T).e3);
-//	} else {
-//		puts("Initial Error!");
-//		return 0;
-//	}
-//	do {
-//		s = DestroyTriplet(&T);
-//	} while (!s);
-//	puts("That's all!");
-//	return 0;
-//}
+int main() {
+	puts("Let's start...");
+	pTriplet T = NULL;
+	Status s = InitTriplet(&T, 1, 2, 3);
+	if (s) {
+		printf(" %d %d %d \n", T->e1, T->e2, T->e3);
+	} else {
+		puts("Initial Error!");
+		return 0;
+	}
+	do {
+		s = DestroyTriplet(&T);
+	} while (!s);
+	puts("That's all!");
+	return 0;
+}
