@@ -71,29 +71,29 @@ Status cata(Catas catas, int projectNum) {
 	return OK;
 }
 
-int main(void) {
-	int projectNum;
-	printf("how many projects? ");
-	fflush(stdout);
-	scanf("%d", &projectNum);
-
-	printf("input spec: project_id boy/girl school_id score\n");
-	printf("project_id bounds: 0 <= project_id < %d\n", projectNum);
-	printf("school_id bounds: 0 <= school_id < %d\n", SCHOOL_NUM);
-	printf("1 for boy, 0 for girl\n");
-	printf("NOW, start your inputs(type 'ok' for end):\n");
-	fflush(stdout);
-	Catas catas;
-	int i = 0;
-	for (; i < SCHOOL_NUM; i++) {
-		catas[i].boy = 0;
-		catas[i].girl = 0;
-		catas[i].all = 0;
-	}
-	cata(catas, projectNum);
-	for (i = 0; i < SCHOOL_NUM; i++) {
-		printf("\nSchool[%d] Status:\n", i);
-		printf("Boy Total: %d, Girl Total: %d, All Total: %d", catas[i].boy, catas[i].girl, catas[i].all);
-	}
-	return 0;
-}
+//int main(void) {
+//	int projectNum;
+//	printf("how many projects? ");
+//	fflush(stdout);
+//	scanf("%d", &projectNum);
+//
+//	printf("input spec: project_id boy/girl school_id score\n");
+//	printf("project_id bounds: 0 <= project_id < %d\n", projectNum);
+//	printf("school_id bounds: 0 <= school_id < %d\n", SCHOOL_NUM);
+//	printf("1 for boy, 0 for girl\n");
+//	printf("NOW, start your inputs(type 'ok' for end):\n");
+//	fflush(stdout);
+//	Catas catas;
+//	int i = 0;
+//	for (; i < SCHOOL_NUM; i++) {
+//		catas[i].boy = 0;
+//		catas[i].girl = 0;
+//		catas[i].all = 0;
+//	}
+//	cata(catas, projectNum);
+//	for (i = 0; i < SCHOOL_NUM; i++) {
+//		printf("\nSchool[%d] Status:\n", i);
+//		printf("Boy Total: %d, Girl Total: %d, All Total: %d", catas[i].boy, catas[i].girl, catas[i].all);
+//	}
+//	return 0;
+//}
