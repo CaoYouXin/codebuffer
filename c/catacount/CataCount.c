@@ -1,7 +1,7 @@
 /*
  * CataCount.c
  *
- *  Created on: 2014Äê10ÔÂ18ÈÕ
+ *  Created on: 2014ï¿½ï¿½10ï¿½ï¿½18ï¿½ï¿½
  *      Author: CaoYouXin
  */
 
@@ -15,6 +15,9 @@
 #define OK 1
 #define ERROR 0
 #define SCHOOL_NUM 5
+#define INPUT_SIZE 10
+#define OK_STR "ok"
+#define OK_LEN strlen(OK_STR)
 
 typedef struct {
 	int boy;
@@ -31,12 +34,15 @@ Status cata(Catas catas, int projectNum) {
 		allNum /= 8;
 	}
 	char *flags = (char *)malloc(allNum);
-	char *input = (char *)malloc(10);
+	char *input = (char *)malloc(INPUT_SIZE);
+	char *ok = (char *)malloc(OK_LEN);
 
 	int project_id, gender, school_id, score, num, off;
 	for (;;) {
-		gets(input);
-		if (!strcmp(input, "ok")) {
+		fgets(input, INPUT_SIZE, stdin);
+		printf("%s", input);
+		memcpy(ok, input, OK_LEN);
+		if (!strcmp(ok, OK_STR)) {
 			break;
 		}
 		sscanf(input, "%d %d %d %d", &project_id, &gender, &school_id, &score);
