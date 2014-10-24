@@ -1,6 +1,5 @@
 package schedule.fs;
 
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
@@ -41,6 +40,9 @@ public class Command {
 	
 	public String cmd() {
 		CommandHandler handler = handlers.get(this.name);
+		if (null == handler) {
+			System.err.println(String.format("lack of handler, %s", this.toString()));
+		}
 		
 		for (Config cfg : this.cfgs) {
 			cfg.cfg(this, handler);

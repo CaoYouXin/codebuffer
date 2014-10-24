@@ -29,7 +29,15 @@ public class Config {
 	}
 	
 	public void cfg(Command command, CommandHandler handler) {
-		handlers.get(this.name).get(command.name).fn(this.params);
+		Map<String, ConfigHandler> map = handlers.get(this.name);
+		if (null == map) {
+			System.err.println(String.format("lack of handler, %s", this.toString()));
+		}
+		ConfigHandler configHandler = map.get(command.name);
+		if (null == configHandler) {
+			System.err.println(String.format("lack of handler, %s", this.toString()));
+		}
+		configHandler.fn(new CfgParam(this.params, handler));
 	}
 	
 	@Override
