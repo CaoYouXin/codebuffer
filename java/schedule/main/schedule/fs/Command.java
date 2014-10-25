@@ -1,11 +1,14 @@
 package schedule.fs;
 
+import java.io.IOException;
+import java.net.URISyntaxException;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
 import utils.StringUtils;
+import utils.dynamicinit.InitManager;
 
 
 public class Command {
@@ -64,7 +67,12 @@ public class Command {
 		if (null != handlers) {
 			return handlers;
 		}
-		return new HashMap<>();
+		try {
+			return InitManager.init("cmds", String.class, CommandHandler.class);
+		} catch (URISyntaxException | IOException e) {
+			e.printStackTrace();
+			return new HashMap<>();
+		}
 	}
 	
 }
